@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewsHub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <img src="/images/logo.png" style="width: 150px; height: 79px;">
+    <div class="inputSearch desktop">
+      <form id="searchForm">
+        <input type="text" placeholder="Eg. Sports" id="searchInput">
+        <span> <i class="fa-solid fa-search" onclick="Search(document.getElementById('searchInput').value)"></i></span>
+      </form>
+    </div>
+    <nav class="desktop">
+      <ul class="saved">
+        <a href="/index.html"><li>Home</li></a>
+        <a href="./saved.html"><li>Saved</li></a>
+      </ul>
+    </nav>
+    <div class="menuBtn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="mobile hidden">
+      <nav>
+        <ul class="saved">
+          <a href="/index.html"><li>Home</li></a>
+        <a href="./saved.html"><li>Saved</li></a>
+        </ul>
+      </nav>
+      <div class="inputSearch">
+        <form id="searchFormMobile">
+          <input type="text" placeholder="Eg. Sports" id="searchInputMobile">
+          <span> <i class="fa-solid fa-search"></i></span>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main id="savedNews"></main>
+  <script src="saved-news.js"></script>
+</body>
+</html>
