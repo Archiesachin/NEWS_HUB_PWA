@@ -127,6 +127,7 @@ form{
 .mobile .inputSearch,
 .mobile form{
   height: 35px;
+  width: 300px;
 }
 
 .hidden{
